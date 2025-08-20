@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator - LE Student Guide</title>
+    <!-- Link to your new CSS file -->
+    <link rel="stylesheet" href="styles/Extras.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header & Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">LE Guide</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="campus.html">Campus Life</a></li>
+                <li><a href="Career.html">Career & Skills</a></li>
+                <li><a href="Growth.html">Personal Growth</a></li>
+                <li><a href="Extras.html">CGPA Calculator</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Title Section -->
+        <section class="page-header">
+            <h1> SGPA & CGPA Calculator</h1>
+            <p>Plan your academic goals with this easy-to-use tool for IGDTUW.</p>
+        </section>
+
+        <!-- Main Calculator Section -->
+        <section class="calculator-container">
+            <!-- Previous Semesters' Data -->
+            <div class="form-section">
+                <h2>Overall CGPA (Optional)</h2>
+                <div class="input-group">
+                    <input type="number" id="prev-cgpa" placeholder="Your CGPA so far">
+                    <input type="number" id="prev-credits" placeholder="Total credits earned so far">
+                </div>
+            </div>
+
+            <!-- Current Semester's Data -->
+            <div class="form-section">
+                <h2>Current Semester SGPA</h2>
+                <table id="subject-table">
+                    <thead>
+                        <tr>
+                            <th>Subject Credits</th>
+                            <th>Marks Obtained (out of 100)</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="subject-rows">
+                        <!-- Rows are added by JavaScript -->
+                    </tbody>
+                </table>
+                <button id="add-subject-btn" class="utility-btn">Add Subject</button>
+            </div>
+
+            <!-- Calculation & Results -->
+            <div class="form-section">
+                <button id="calculate-btn" class="cta-button primary">Calculate</button>
+                <div id="result-box" class="result-box-style">
+                    <h3>Your Results:</h3>
+                    <p id="sgpa-result">SGPA: -</p>
+                    <p id="cgpa-result">Overall CGPA: -</p>
+                </div>
+            </div>
+            
+            <!-- Grading System Reference Table -->
+            <div class="form-section">
+                <h2>Grading System Reference</h2>
+                <table id="grading-table">
+                    <thead>
+                        <tr>
+                            <th>Marks Range</th>
+                            <th>Letter Grade</th>
+                            <th>Grade Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>>= 93</td><td>A+</td><td>10</td></tr>
+                        <tr><td>85 - 92</td><td>A</td><td>9</td></tr>
+                        <tr><td>77 - 84</td><td>B+</td><td>8</td></tr>
+                        <tr><td>69 - 76</td><td>B</td><td>7</td></tr>
+                        <tr><td>61 - 68</td><td>C+</td><td>6</td></tr>
+                        <tr><td>53 - 60</td><td>C</td><td>5</td></tr>
+                        <tr><td>45 - 52</td><td>D</td><td>4</td></tr>
+                        <tr><td>&lt; 45</td><td>F</td><td>0</td></tr>
+                    </tbody>
+                </table>
+            </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Lateral Entry Student Guide. Built to empower students like you.</p>
+        <p><a href="about.html">About</a> | <a href="https://www.linkedin.com/in/shristi15/">Contact</a></p>
+    </footer>
+
+    <!-- Link to your JavaScript file -->
+    <script src="JsStyle/Extras.js"></script>
+</body>
+</html>

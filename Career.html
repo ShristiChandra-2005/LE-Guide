@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career & Skills - LE Student Guide</title>
+    <!-- Link to the NEW CSS file for this page -->
+    <link rel="stylesheet" href="styles/career.css">
+    <link rel="stylesheet" href="styles/Common.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header & Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">LE Guide</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="campus.html">Campus Life</a></li>
+                <li><a href="Career.html">Career & Skills</a></li>
+                <li><a href="Growth.html">Personal Growth</a></li>
+                <li><a href="Extras.html">CGPA Calculator</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Title Section -->
+        <section class="page-header">
+            <h1>Career & Skills Roadmap</h1>
+            <p>Your guide to internships, placements, and building the right skills.</p>
+        </section>
+
+        <!-- Placement Roadmap Section (INTERACTIVE) -->
+        <section class="content-section">
+            <h2>Placement Roadmap</h2>
+            <p>Click on each year to see the recommended focus areas and action items.</p>
+            
+            <!-- Interactive Tabs -->
+            <div class="roadmap-tabs">
+                <button class="tab-link active" data-tab="year2">2nd Year</button>
+                <button class="tab-link" data-tab="year3">3rd Year</button>
+                <button class="tab-link" data-tab="year4">4th Year</button>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="roadmap-content">
+                <!-- 2nd Year Content -->
+                <div id="year2" class="tab-content active">
+                    <h3>Focus: Exploration & Foundation</h3>
+                    <ul>
+                        <li>Master a programming language (C++, Java, or Python).</li>
+                        <li>Build a strong foundation in Data Structures & Algorithms (DSA).</li>
+                        <li>Explore different technical domains (Web Dev, App Dev, ML).</li>
+                        <li>Participate in college club events and workshops.</li>
+                        <li>Create a basic LinkedIn profile and start connecting.</li>
+                    </ul>
+                </div>
+                <!-- 3rd Year Content -->
+                <div id="year3" class="tab-content">
+                    <h3>Focus: Skill Building & Internships</h3>
+                    <ul>
+                        <li>Solve DSA problems regularly on platforms like LeetCode.</li>
+                        <li>Build 2-3 solid projects for your resume.</li>
+                        <li>Learn about core subjects: OS, DBMS, and Computer Networks.</li>
+                        <li>Actively apply for summer internships.</li>
+                        <li>Start preparing for aptitude tests (Quantitative, Logical Reasoning).</li>
+                    </ul>
+                </div><br>
+                <!-- 4th Year Content -->
+                <div id="year4" class="tab-content">
+                    <h3>Focus: Placements & Specialization</h3>
+                    <ul>
+                        <li>Revise all core subjects and DSA concepts thoroughly.</li>
+                        <li>Give mock interviews and practice company-specific questions.</li>
+                        <li>Polish your resume and tailor it for different job roles.</li>
+                        <li>Stay updated on company visits and placement cell announcements.</li>
+                        <li>Focus on communication skills and group discussion practice.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications & Skills Section -->
+        <section class="content-section alternate-bg">
+            <h2>Certifications & Skills</h2>
+            <p>Level up your knowledge with courses from the best platforms.</p>
+            <div class="platform-grid">
+                <!-- NPTEL -->
+                <div class="platform-card">
+                    <h3>NPTEL</h3>
+                    <p>Excellent for in-depth knowledge of core engineering subjects. Certificates from IITs hold great value.</p>
+                    <a href="https://nptel.ac.in/" target="_blank" class="cta-button secondary">Visit NPTEL</a>
+                </div>
+                <!-- Coursera -->
+                <div class="platform-card">
+                    <h3>Coursera</h3>
+                    <p>Offers specializations and professional certificates from top universities and companies like Google & IBM.</p>
+                    <a href="https://www.coursera.org/" target="_blank" class="cta-button secondary">Visit Coursera</a>
+                </div>
+                <!-- Udemy -->
+                <div class="platform-card">
+                    <h3>Udemy</h3>
+                    <p>A massive library of project-based courses on virtually any technical skill you can imagine.</p>
+                    <a href="https://www.udemy.com/" target="_blank" class="cta-button secondary">Visit Udemy</a>
+                </div>
+                
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Lateral Entry Student Guide. Built to empower students like you.</p>
+        <p><a href="about.html">About</a> | <a href="https://www.linkedin.com/in/shristi15/">Contact</a></p>
+    </footer>
+
+    <!-- Link to the NEW JavaScript file -->
+    <script src="JsStyle/career.js"></script>
+</body>
+</html>

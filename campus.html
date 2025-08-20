@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Life (IGDTUW) - LE Student Guide</title>
+    <!-- Link to the NEW CSS file -->
+    <link rel="stylesheet" href="styles/campus.css">
+    <link rel="stylesheet" href="styles/Common.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header & Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">LE Guide</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="campus.html">Campus Life</a></li>
+                <li><a href="Career.html">Career & Skills</a></li>
+                <li><a href="Growth.html">Personal Growth</a></li>
+                <li><a href="Extras.html">CGPA Calculator</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- NEW: IGDTUW CITY Feature Section -->
+        <section class="feature-spotlight">
+            <div class="feature-content">
+                <h2>Discover IGDTUW's Vibrancy</h2>
+                <p>This page is inspired by the incredible societies at IGDTUW. For a full, detailed look at every society, their events, and how to join, check out the official IGDTUW CITY website.</p>
+                <a href="https://igdtuwcity.github.io/IGDTUW_CITY/" target="_blank" class="cta-button primary">Explore IGDTUW CITY</a>
+            </div>
+        </section>
+
+        <!-- Clubs & Societies Section (INTERACTIVE) -->
+        <section class="content-section">
+            <h2>Clubs & Societies</h2>
+            <p>Find your community. Filter by interest to discover technical, and non-technical societies on campus.</p>
+            
+            <!-- Interactive Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="technical">Technical</button>
+                <button class="filter-btn" data-filter="non-technical">Non-Technical</button>
+            </div>
+
+            <!-- Grid of Clubs based on IGDTUW CITY -->
+            <div class="clubs-grid">
+                <!-- Technical Societies -->
+                <div class="club-card" data-category="technical"><h3>Lean In IGDTUW</h3><p>A community to empower women in technology.</p></div>
+                <div class="club-card" data-category="technical"><h3>IEEE IGDTUW</h3><p>Delhi Section's student branch for advancing technology.</p></div>
+                <div class="club-card" data-category="technical"><h3>IGDTUW-OSS</h3><p>Open Source Software development community.</p></div>
+                <div class="club-card" data-category="technical"><h3>GDSC IGDTUW</h3><p>Google Developer Student Club for peer-to-peer learning.</p></div>
+                <div class="club-card" data-category="technical"><h3>CodeChef IGDTUW</h3><p>Competitive programming and problem-solving chapter.</p></div>
+                <div class="club-card" data-category="technical"><h3>Microsoft Learn Student Chapter</h3><p>Explore Microsoft technologies and cloud computing.</p></div>
+                <div class="club-card" data-category="technical"><h3>Robolution</h3><p>The official Robotics society of IGDTUW.</p></div>
+
+                <!-- Non-Technical Societies -->
+                <div class="club-card" data-category="non-technical"><h3>Tarannum</h3><p>The Music Society for singers and instrumentalists.</p></div>
+                <div class="club-card" data-category="non-technical"><h3>ZENA</h3><p>The Western Dance Society for passionate dancers.</p></div>
+                <div class="club-card" data-category="non-technical"><h3>Hypnotics</h3><p>The Indian Dance Society celebrating traditional forms.</p></div>
+                <div class="club-card" data-category="non-technical"><h3>The Debating Society</h3><p>For eloquent speakers and critical thinkers.</p></div>
+                <div class="club-card" data-category="non-technical"><h3>Spic Macay</h3><p>Promoting Indian classical music and culture.</p></div>
+                <div class="club-card" data-category="non-technical"><h3>Green Sphere</h3><p>The official Environment and Sustainability club.</p></div>
+                <div class="club-card" data-category="non-technical"><h3>E-Cell IGDTUW</h3><p>The Entrepreneurship Cell fostering startup culture.</p></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Lateral Entry Student Guide. Built to empower students like you.</p>
+        <p><a href="about.html">About</a> | <a href="https://www.linkedin.com/in/shristi15/">Contact</a></p>
+    </footer>
+
+    <!-- Link to the NEW JavaScript file -->
+    <script src="JsStyle/campus.js"></script>
+</body>
+</html>

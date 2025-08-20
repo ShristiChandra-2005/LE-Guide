@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics - LE Student Guide</title>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="styles/academics.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header & Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">LE Guide</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="campus.html">Campus Life</a></li>
+                <li><a href="Career.html">Career & Skills</a></li>
+                <li><a href="Growth.html">Personal Growth</a></li>
+                <li><a href="Extras.html">CGPA Calculator</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Title & Introduction Section -->
+        <section class="page-header">
+            <h1>Your Academic Roadmap</h1>
+            <p>From bridging 1st-year gaps to excelling in DSA, coding, and core subjects.</p>
+        </section>
+
+        <!-- Important Alert Section -->
+        <section class="alert-section">
+            <div class="alert-box">
+                <h3>Start DSA Early!</h3>
+                <p>Many top companies visit campus to hire 2nd-year students for summer internships. A strong foundation in Data Structures and Algorithms is essential to clear their coding rounds. Don't wait!</p>
+            </div>
+        </section>
+
+        <!-- Top Free DSA Resources Section -->
+        <section class="content-section">
+            <h2>Top Free DSA Resources</h2>
+            <p>These are the most recommended resources used by students to master DSA from scratch.</p>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <h3>Striver's A2Z DSA Sheet</h3>
+                    <p>A comprehensive and structured sheet that takes you from beginner to advanced. A must-do for placements.</p>
+                    <a href="https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/" target="_blank" class="cta-button">View Sheet</a>
+                </div>
+                <div class="resource-card">
+                    <h3>Love Babbar's DSA Playlist</h3>
+                    <p>One of the most popular YouTube playlists for learning DSA concepts in Hindi with clear explanations.</p>
+                    <a href="https://www.youtube.com/playlist?list=PLDzeHZWIZsTryvtXdMr6rPh4IDexB5NIA" target="_blank" class="cta-button">Watch Playlist</a>
+                </div>
+                <div class="resource-card">
+                    <h3>NeetCode's Roadmap</h3>
+                    <p>A great resource for LeetCode problems, categorized by topic and difficulty, with video solutions.</p>
+                    <a href="https://neetcode.io/roadmap" target="_blank" class="cta-button">Visit Roadmap</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- DSA & Coding Prep Section (INTERACTIVE) -->
+        <section class="content-section alternate-bg">
+            <h2>DSA & Coding Preparation</h2>
+            <p>Track your progress on the most important DSA topics. Your selections are saved automatically in your browser!</p>
+            <div class="dsa-tracker">
+                <h3>DSA Progress Tracker</h3>
+                <ul class="checklist" id="dsa-checklist">
+                    <li data-task="1">Arrays & Strings</li>
+                    <li data-task="2">Linked Lists (Singly, Doubly, Circular)</li>
+                    <li data-task="3">Stacks & Queues</li>
+                    <li data-task="4">Hashing (Hash Maps & Sets)</li>
+                    <li data-task="5">Trees (Traversal, BST)</li>
+                    <li data-task="6">Heaps (Priority Queues)</li>
+                    <li data-task="7">Graphs (BFS, DFS)</li>
+                    <li data-task="8">Dynamic Programming (Intro)</li>
+                </ul>
+                <button id="reset-progress-btn" class="utility-btn">Reset Progress</button>
+            </div>
+        </section>
+
+        <!-- How to Study Effectively Section -->
+        <section class="content-section">
+            <h2>How to Study Effectively</h2>
+            <p>A simple, proven strategy for balancing college exams and skill development.</p>
+            <div class="tips-grid">
+                <div class="tip-card"><h4>Do DSA Daily</h4><p>Consistency is key. Solve at least 2-3 problems every day to build a strong habit and improve your problem-solving skills.</p></div>
+                <div class="tip-card"><h4>Mid-Sem Prep</h4><p>Start your preparation 10 days before the exams. Focus on class notes and topics emphasized by your professors.</p></div>
+                <div class="tip-card"><h4>Finals Prep</h4><p>Begin studying 20 days before your final exams. Prioritize past year papers and revise the entire syllabus thoroughly.</p></div>
+                <div class="tip-card"><h4>Attend Classes</h4><p>Go to college daily. You'll learn which topics are most important for exams directly from the professors who set the papers.</p></div>
+            </div>
+        </section>
+
+        <!-- 2nd Year Internship Opportunities Section in Table Format -->
+        <section class="content-section alternate-bg">
+            <h2>2nd Year Internship Opportunities</h2>
+            <p>Gain valuable experience by targeting these prestigious corporate and research programs.</p>
+            <div class="table-container">
+                <table class="internship-table">
+                    <thead>
+                        <tr>
+                            <th>Program</th>
+                            <th>Details</th>
+                            <th>Timeline</th>
+                            <th>Link</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>🔹 Google STEP</td>
+                            <td>12-week training and internship for 1st & 2nd year students. Learn coding, teamwork, and get mentored by Googlers.</td>
+                            <td>Opens: Mar-Apr</td>
+                            <td><a href="https://buildyourfuture.withgoogle.com/programs/step" target="_blank" class="table-button">Apply Here</a></td>
+                        </tr>
+                        <tr>
+                            <td>🔹 Microsoft Engage</td>
+                            <td>Mentorship program with projects that can lead to internship/PPO offers. A direct path for early exposure.</td>
+                            <td>Opens: May</td>
+                            <td><a href="https://careers.microsoft.com/v2/global/en/engage.html" target="_blank" class="table-button">Explore</a></td>
+                        </tr>
+                        <tr>
+                            <td>🔹 Amazon WOW</td>
+                            <td>Online challenge for women, leading to mentorship and internship offers. Empowering program with global exposure.</td>
+                            <td>Opens: Mar-Jun</td>
+                            <td><a href="#" target="_blank" class="table-button">Check Here</a></td>
+                        </tr>
+                        <tr>
+                            <td>🔹 Flipkart GRiD</td>
+                            <td>Hackathon challenge where winners can land internships and PPOs. Compete and win prizes.</td>
+                            <td>Opens: Jul-Aug</td>
+                            <td><a href="#" target="_blank" class="table-button">View Details</a></td>
+                        </tr>
+                        <tr>
+                            <td>🔹 JPMorgan "Code for Good"</td>
+                            <td>Coding hackathon with social impact projects. Can lead to internship and full-time role opportunities.</td>
+                            <td>Opens: May-Jul</td>
+                            <td><a href="#" target="_blank" class="table-button">Learn More</a></td>
+                        </tr>
+                         <tr>
+                            <td>🔹 DRDO & ISRO</td>
+                            <td>Prestigious government/research training programs. Great exposure to real-world projects.</td>
+                            <td>Apply 2-3 months before summer/winter</td>
+                            <td><a href="https://www.drdo.gov.in/" target="_blank" class="table-button">DRDO Info</a></td>
+                        </tr>
+                        <tr>
+                            <td>🔹 NIT/IIT Research</td>
+                            <td>Summer research projects under professors. Strong for resumes and higher studies abroad.</td>
+                            <td>Apply: Jan-Mar</td>
+                            <td><a href="#" target="_blank" class="table-button">Check Portals</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+        <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Lateral Entry Student Guide. Built to empower students like you.</p>
+        <p><a href="about.html">About</a> | <a href="https://www.linkedin.com/in/shristi15/">Contact</a></p>
+    </footer>
+
+    <!-- Link to your JavaScript file -->
+    <script src="JsStyle/academic.js"></script>
+</body>
+</html>

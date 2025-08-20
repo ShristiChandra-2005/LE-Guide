@@ -1,0 +1,89 @@
+/* --- Global Styles & Variables --- */
+:root {
+    --primary-color: #4a90e2;
+    --secondary-color: #50e3c2; /* A calm, vibrant teal */
+    --dark-color: #333;
+    --light-color: #f4f4f4;
+    --text-color: #555;
+    --font-family: 'Poppins', sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--font-family); line-height: 1.6; background-color: #fff; color: var(--text-color); }
+
+/* --- Header & Navigation --- */
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: 1rem 5%; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+.logo { font-size: 1.5rem; font-weight: 700; color: var(--primary-color); }
+.nav-links { list-style: none; display: flex; }
+.nav-links li { padding: 0 1rem; }
+.nav-links a { text-decoration: none; color: var(--dark-color); font-weight: 600; transition: color 0.3s ease; }
+.nav-links a:hover, .nav-links a.active { color: var(--primary-color); }
+
+/* --- Page Header --- */
+.page-header { background: var(--secondary-color); color: #fff; padding: 3rem 5%; text-align: center; }
+.page-header h1 { font-size: 2.8rem; margin-bottom: 0.5rem; }
+.page-header p { font-size: 1.1rem; opacity: 0.9; }
+
+/* --- General Content Section --- */
+.content-section { padding: 3rem 5%; }
+.content-section h2 { text-align: center; font-size: 2.5rem; margin-bottom: 1rem; color: var(--dark-color); }
+.content-section p { max-width: 800px; margin: 0 auto 2rem auto; text-align: center; }
+.content-section.alternate-bg { background-color: var(--light-color); }
+
+/* --- INTERACTIVE JOURNAL PROMPT --- */
+.journal-prompt-container { max-width: 700px; margin: auto; text-align: center; }
+.prompt-display { background: #fff; border: 2px dashed var(--secondary-color); border-radius: 8px; padding: 2rem; margin-bottom: 1.5rem; min-height: 100px; display: flex; justify-content: center; align-items: center; }
+.prompt-display p { font-size: 1.3rem; font-style: italic; color: var(--dark-color); margin: 0; transition: opacity 0.5s ease; }
+.cta-button.primary { background: var(--primary-color); color: #fff; padding: 0.8rem 2rem; text-decoration: none; border-radius: 5px; font-weight: 600; cursor: pointer; border: none; transition: all 0.3s ease; }
+.cta-button.primary:hover { background: #3a7bc8; transform: scale(1.05); }
+
+/* --- NEW STYLES: Interactive Breathing Exercise --- */
+.breathing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    margin: auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.breathing-circle {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    /* This is where the magic happens */
+    transition: transform 4s ease-in-out;
+}
+
+/* This class will be added by JavaScript to make the circle grow */
+.breathing-circle.grow {
+    transform: scale(1.5);
+}
+
+#breathing-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--dark-color);
+    margin-bottom: 1.5rem;
+}
+
+/* Style for the button when the exercise is running */
+#start-breathing-btn:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+/* --- Tips Grid --- */
+.tips-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; max-width: 1200px; margin: auto; }
+.tip-card { background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.07); }
+.tip-card h3 { color: var(--primary-color); margin-bottom: 0.75rem; }
+.tip-card p { text-align: left; margin: 0; }
+
+/* --- Footer --- */
+footer { background: var(--dark-color); color: #fff; text-align: center; padding: 2rem 5%; }

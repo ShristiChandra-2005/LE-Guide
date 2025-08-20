@@ -1,0 +1,79 @@
+/* --- Global Styles & Variables --- */
+:root {
+    --primary-color: #4a90e2;
+    --secondary-color: #50e3c2;
+    --dark-color: #333;
+    --light-color: #f4f4f4;
+    --text-color: #555;
+    --font-family: 'Poppins', sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--font-family); line-height: 1.6; background-color: #fff; color: var(--text-color); }
+
+/* --- Header & Navigation --- */
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: 1rem 5%; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+.logo { font-size: 1.5rem; font-weight: 700; color: var(--primary-color); }
+.nav-links { list-style: none; display: flex; }
+.nav-links li { padding: 0 1rem; }
+.nav-links a { text-decoration: none; color: var(--dark-color); font-weight: 600; transition: color 0.3s ease; }
+.nav-links a:hover, .nav-links a.active { color: var(--primary-color); }
+
+/* --- NEW IGDTUW CITY Feature Spotlight --- */
+.feature-spotlight {
+    padding: 3rem 5%;
+    background: var(--light-color);
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+.feature-content h2 {
+    font-size: 2.2rem;
+    color: var(--dark-color);
+    margin-bottom: 0.5rem;
+}
+.feature-content p {
+    max-width: 700px;
+    margin: 0 auto 1.5rem auto;
+    font-size: 1.1rem;
+}
+.cta-button.primary {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.cta-button.primary:hover {
+    background: #3a7bc8;
+    transform: scale(1.05);
+}
+
+/* --- General Content Section --- */
+.content-section { padding: 3rem 5%; }
+.content-section h2 { text-align: center; font-size: 2.5rem; margin-bottom: 1rem; color: var(--dark-color); }
+.content-section p { max-width: 800px; margin: 0 auto 2rem auto; text-align: center; }
+
+/* --- Interactive Filter Buttons --- */
+.filter-buttons { text-align: center; margin-bottom: 2.5rem; }
+.filter-btn { background: none; border: 2px solid var(--primary-color); color: var(--primary-color); padding: 0.6rem 1.5rem; margin: 0 0.5rem; border-radius: 25px; cursor: pointer; font-weight: 600; transition: all 0.3s ease; }
+.filter-btn:hover, .filter-btn.active { background: var(--primary-color); color: #fff; }
+
+/* --- Clubs Grid --- */
+.clubs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 1200px; margin: auto; }
+.club-card {
+    background: #fff;
+    padding: 2rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid var(--primary-color);
+}
+.club-card:hover { transform: translateY(-8px); box-shadow: 0 12px 25px rgba(0,0,0,0.12); }
+.club-card h3 { color: var(--dark-color); font-size: 1.4rem; margin-bottom: 0.5rem; }
+.club-card p { text-align: center; margin: 0; font-size: 0.95rem; }
+
+/* --- Footer --- */
+footer { background: var(--dark-color); color: #fff; text-align: center; padding: 2rem 5%; }

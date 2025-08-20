@@ -1,0 +1,121 @@
+/* --- Global Styles & Variables --- */
+:root {
+    --primary-color: #4a90e2;
+    --secondary-color: #50e3c2;
+    --dark-color: #333;
+    --light-color: #f4f4f4;
+    --text-color: #555;
+    --font-family: 'Poppins', sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--font-family); line-height: 1.6; background-color: #fff; color: var(--text-color); }
+
+/* --- Header & Navigation --- */
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: 1rem 5%; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+.logo { font-size: 1.5rem; font-weight: 700; color: var(--primary-color); }
+.nav-links { list-style: none; display: flex; }
+.nav-links li { padding: 0 1rem; }
+.nav-links a { text-decoration: none; color: var(--dark-color); font-weight: 600; transition: color 0.3s ease; }
+.nav-links a:hover, .nav-links a.active { color: var(--primary-color); }
+
+/* --- Page Header --- */
+.page-header { background: var(--primary-color); color: #fff; padding: 3rem 5%; text-align: center; }
+.page-header h1 { font-size: 2.8rem; margin-bottom: 0.5rem; }
+.page-header p { font-size: 1.1rem; opacity: 0.9; }
+
+/* --- General Content Section --- */
+.content-section { padding: 3rem 5%; }
+.content-section h2 { text-align: center; font-size: 2.5rem; margin-bottom: 1rem; color: var(--dark-color); }
+.content-section p { max-width: 800px; margin: 0 auto 2rem auto; text-align: center; }
+.content-section.alternate-bg { background-color: var(--light-color); }
+
+/* --- INTERACTIVE ROADMAP TABS --- */
+.roadmap-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #eee;
+}
+.tab-link {
+    padding: 1rem 2rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-color);
+    position: relative;
+    transition: color 0.3s ease;
+}
+.tab-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--primary-color);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+.tab-link.active { color: var(--primary-color); }
+.tab-link.active::after { transform: scaleX(1); }
+
+/* --- Roadmap Tab Content --- */
+.roadmap-content { max-width: 800px; margin: auto; }
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+.tab-content h3 { font-size: 1.8rem; color: var(--dark-color); margin-bottom: 1.5rem; text-align: center; }
+.tab-content ul {
+    list-style: none;
+    padding-left: 0;
+}
+.tab-content ul li {
+    background: #f9f9f9;
+    padding: 1rem 1.5rem;
+    margin-bottom: 0.75rem;
+    border-left: 4px solid var(--secondary-color);
+    border-radius: 4px;
+    font-size: 1.05rem;
+}
+.tab-content ul li::before {
+    content: '✓';
+    color: var(--secondary-color);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* --- Platform Cards Section --- */
+.platform-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+.platform-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.platform-card:hover { transform: translateY(-8px); box-shadow: 0 12px 25px rgba(0,0,0,0.1); }
+.platform-card h3 { color: var(--primary-color); font-size: 1.5rem; margin-bottom: 0.5rem; }
+.platform-card p { margin-bottom: 1.5rem; text-align: center; }
+.cta-button.secondary {
+    display: inline-block;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+.cta-button.secondary:hover { background: #3a7bc8; }
+
+/* --- Footer --- */
+footer { background: var(--dark-color); color: #fff; text-align: center; padding: 2rem 5%; }
